@@ -1,7 +1,6 @@
 package com.example.assignment2
 
 import androidx.room.Entity
-import androidx.room.PrimaryKey
 
 @Entity(tableName = "weatherTable", primaryKeys = ["dayDate", "monthDate", "yearDate"])
 data class Weather(

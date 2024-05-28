@@ -55,10 +55,9 @@ fun getFutureDate(
     if (dayMonths.isEmpty()) {
         return listOf("No dates for $day-$month in database", "", "")
     }
-    val sortedDayMonths: List<Weather> = if (dayMonths.size > 10){
+    val sortedDayMonths: List<Weather> = if (dayMonths.size > 10) {
         dayMonths.sortedByDescending { it.yearDate }.take(10)
-    }
-    else{
+    } else {
         dayMonths
     }
     var avgMaxTemp = 0.0

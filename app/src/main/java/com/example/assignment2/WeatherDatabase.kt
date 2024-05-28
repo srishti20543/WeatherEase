@@ -9,7 +9,7 @@ import androidx.room.RoomDatabase
     entities = [Weather::class],
     version = 1
 )
-abstract class WeatherDatabase: RoomDatabase() {
+abstract class WeatherDatabase : RoomDatabase() {
     abstract fun dao(): WeatherDao
 
     companion object {
